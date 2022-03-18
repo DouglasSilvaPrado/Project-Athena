@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import AuthService from '../../../services/auth.service';
 import EventBus from '../../../common/EventBus';
 
+import "./styles.css"
+
 class Navbar extends Component {
     constructor(props) {
         super(props);
@@ -47,52 +49,37 @@ class Navbar extends Component {
         const { currentUser} = this.state;
         return (
             <>
-                <nav className="navbar navbar-expand navbar-dark bg-dark">
-                    <Link to={"/"} className="navbar-brand">
-                        Athena
-                    </Link>
-                    <div className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                        <Link to={"/home"} className="nav-link">
-                            Home
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link to={"/courses"} className="nav-link">
-                            Cursos
-                        </Link>
-                        </li>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <Link to={"/"} className="navbar-brand">Athena</Link>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class=" menu collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <Link to={"/home"} className="nav-link">Home</Link>
+                                <Link to={"/courses"} className="nav-link">Cursos</Link>
+                                <Link to={"/about"} className="nav-link">Sobre</Link>
+                                <Link to={"/contact"} className="nav-link">Contato</Link>        
+                            </div>
+                            <div  class="navbar-nav">
+                                {currentUser ? (
+                                        
+                                        <>
+                                            <Link to={"/profile"} className="nav-link">{currentUser.username}</Link>
+                                            <a href="/login" className="nav-link" onClick={this.logOut}>LogOut</a>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Link to={"/login"} className="nav-link">Login</Link>
+                                            <Link to={"/register"} className="nav-link">Sign Up</Link>
+                                        </>
+                                    )}
+
+                            </div>
+                        </div>
                     </div>
-
-                    {currentUser ? (
-                        <div className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <Link to={"/profile"} className="nav-link">
-                            {currentUser.username}
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <a href="/login" className="nav-link" onClick={this.logOut}>
-                            LogOut
-                            </a>
-                        </li>
-                        </div>
-                    ) : (
-                        <div className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <Link to={"/login"} className="nav-link">
-                            Login
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link to={"/register"} className="nav-link">
-                            Sign Up
-                            </Link>
-                        </li>
-                        </div>
-                    )}
-                </nav>
+                </nav>   
             </>
         );
     }
