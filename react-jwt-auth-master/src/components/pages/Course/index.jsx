@@ -20,25 +20,26 @@ function PageCourses() {
     return ( 
         <>
 
-          <div class="jumbotron jumbotron-fluid row text-center justify-content-center align-items-center">
-
-                  <div class="col-sm-12 col-md-12 col-lg-6 text-white py-5">
-                      <h1 className='pb-3'>ATHENA</h1>
-                      <p class="lead">Faça seu caminho, <br /> conheça um novo mundo</p>
-                  </div>
-
-                  <div class="col-sm-12 col-md-12 col-lg-6 py-5">
-                          <img src="https://i.ibb.co/4JW5BVY/destaque-Cursos.gif"
-                              class="img-fluid"
-                              alt="" />
-                  </div>
-
-          </div>
+          <div class="jumbotron jumbotron-fluid">
+            <div className="container">
+              <div className='row text-center justify-content-center align-items-center'>
+                <div class="col-sm-12 col-md-6  text-white py-5">
+                    <h1 className='pb-3'>ATHENA</h1>
+                    <p class="lead">Faça seu caminho, <br /> conheça um novo mundo</p>
+                </div>{/* texts */}
+                <div class="col-sm-12 col-md-6  py-5">
+                        <img src="https://i.ibb.co/4JW5BVY/destaque-Cursos.gif"
+                            class="img-fluid"
+                            alt="" />
+                </div> {/* gif */} 
+              </div> {/*row  */}    
+            </div>{/* container */}   
+          </div>{/* jumbotron */}
 
           <div className="container">
             <div className="row">
                 {courses.map(course => (
-                    <div key={course.id} className="col-sm-6 col-lg-4 mb-3">
+                    <div key={course.id} className="col-md-6 col-lg-4 mb-3">
                         <CourseCard course={course} />
                     </div>
                 )
