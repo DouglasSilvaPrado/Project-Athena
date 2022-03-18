@@ -51,7 +51,9 @@ class Navbar extends Component {
             <>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
-                        <Link to={"/"} className="navbar-brand">Athena</Link>
+                        <Link to={"/"} className="navbar-brand">
+                          <img src="https://raw.githubusercontent.com/DouglasSilvaPrado/ProjetoAthena/a1152507e9c1b610b30b5bcf763139ff5cb8c1bb/Squad55/LogoAtena%202.svg" alt="logo escrito athena cor braca e borda rosa" />
+                        </Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>

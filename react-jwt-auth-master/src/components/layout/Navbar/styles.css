@@ -3,3 +3,7 @@
     justify-content: space-between !important;
     align-items: center;
 }
+
+.bg-dark{
+    background: linear-gradient(87.4deg, #C60DE2 -54.2%, rgba(51, 24, 89, 0.14) 100%);
+}
