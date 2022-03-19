@@ -13,7 +13,9 @@ function Jumbotron(props) {
                     <div className="col-sm-12 col-md-6  py-5">
                             <img src={props.image}
                                 className="img-fluid"
-                                alt={props.title} />
+                                alt={props.title}
+                                style={{height:360}}
+                                 />
                     </div> {/* img */} 
                 </div> {/*row  */}    
                 </div>{/* container */}   
