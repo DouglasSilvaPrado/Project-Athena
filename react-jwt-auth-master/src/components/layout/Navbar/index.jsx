@@ -59,7 +59,7 @@ class Navbar extends Component {
                         </button>
                         <div className=" menu collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <Link to={"/home"} className="nav-link">Home</Link>
+                                <Link to={"/"} className="nav-link">Home</Link>
                                 <Link to={"/courses"} className="nav-link">Cursos</Link>
                                 <Link to={"/about"} className="nav-link">Sobre</Link>
                                 <Link to={"/contact"} className="nav-link">Contato</Link>        
