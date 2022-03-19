@@ -8,8 +8,6 @@ body {
 
 .jumbotron-fluid {
     background: linear-gradient(180deg, rgba(198, 13, 226, 0.58) 0%, rgba(242, 148, 209, 0) 94.27%);
-    padding:0 !important;
-    margin: 0!important;
 }
 
 .bg-gradient {
