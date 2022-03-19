@@ -1,6 +1,7 @@
 import axios from 'axios';
 import CourseCard from '../../layout/CourseCard';
 import React, { useState, useEffect } from 'react';
+import Jumbotron from '../../layout/Jumbotron';
 
 import "./styles.css"
 
@@ -19,22 +20,11 @@ function PageCourses() {
 
     return ( 
         <>
-
-          <div className="jumbotron jumbotron-fluid">
-            <div className="container">
-              <div className='row text-center justify-content-center align-items-center'>
-                <div className="col-sm-12 col-md-6  text-white py-5">
-                    <h1 className='pb-3'>ATHENA</h1>
-                    <p className="lead">Faça seu caminho, <br /> conheça um novo mundo</p>
-                </div>{/* texts */}
-                <div className="col-sm-12 col-md-6  py-5">
-                        <img src="https://i.ibb.co/4JW5BVY/destaque-Cursos.gif"
-                            className="img-fluid"
-                            alt="" />
-                </div> {/* gif */} 
-              </div> {/*row  */}    
-            </div>{/* container */}   
-          </div>{/* jumbotron */}
+          <Jumbotron
+           title={'ATHENA'}
+           description={'Faça seu caminho, conheça um novo mundo'}
+           image={'https://i.ibb.co/4JW5BVY/destaque-Cursos.gif'} 
+          />
 
           <div className="container">
             <div className="row">

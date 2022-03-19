@@ -27,6 +27,7 @@ function CourseById({courseId}) {
                 <div className="col-sm-12 col-md-6  py-5">
                         <img src={course.image}
                             className="img-fluid"
+                            style={{height:360}}
                             alt="" />
                 </div> {/* gif */} 
               </div> {/*row  */}    
