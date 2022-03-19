@@ -20,16 +20,16 @@ function PageCourses() {
     return ( 
         <>
 
-          <div class="jumbotron jumbotron-fluid">
+          <div className="jumbotron jumbotron-fluid">
             <div className="container">
               <div className='row text-center justify-content-center align-items-center'>
-                <div class="col-sm-12 col-md-6  text-white py-5">
+                <div className="col-sm-12 col-md-6  text-white py-5">
                     <h1 className='pb-3'>ATHENA</h1>
-                    <p class="lead">Faça seu caminho, <br /> conheça um novo mundo</p>
+                    <p className="lead">Faça seu caminho, <br /> conheça um novo mundo</p>
                 </div>{/* texts */}
-                <div class="col-sm-12 col-md-6  py-5">
+                <div className="col-sm-12 col-md-6  py-5">
                         <img src="https://i.ibb.co/4JW5BVY/destaque-Cursos.gif"
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="" />
                 </div> {/* gif */} 
               </div> {/*row  */}    

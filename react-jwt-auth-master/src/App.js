@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 
 // login
@@ -26,19 +26,19 @@ function App()  {
     return (
         <>
           <Navbar />
-          
-            <Switch>
-              <Route exact path={["/", "/home"]} component={PageHome} />
-              <Route exact path="/courses" component={PageCourses} />
-              <Route exact path="/about" component={PageAbout} />
-              <Route exact path="/contact" component={PageContact} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/register" component={Register} />
-              <Route exact path="/profile" component={Profile} />
-              {/* <Route exat path="/courses">
+            
+            <Routes>
+              <Route path="/" element={<PageHome />} />
+              <Route path="/courses" element={<PageCourses />} />
+              <Route path="/about" element={<PageAbout />} />
+              <Route path="/contact" element={<PageContact/>} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/register" element={<Register/>} />
+              <Route path="/profile" element={<Profile/>} />
+              <Route path="/course">
                 <Route path=":courseId" element={<Courses />} />
-              </Route> */}
-            </Switch>
+              </Route>
+            </Routes>
         </>
 
     );

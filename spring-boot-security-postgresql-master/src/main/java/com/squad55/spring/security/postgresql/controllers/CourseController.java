@@ -26,7 +26,7 @@ public class CourseController {
 		return service.findAll(pageable);
 	}
 	
-	@GetMapping(value ="/courses{id}")
+	@GetMapping(value ="/courses/{id}")
 	public CourseDTO findById(@PathVariable Long id){
 		return service.findById(id);
 	}

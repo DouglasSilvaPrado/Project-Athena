@@ -16,7 +16,7 @@ function CourseCard({course}) {
                 </div>
                 <div className="card-footer">
                     <Link to={`/course/${course.id}`}>
-                       <a className="btn btn-primary w-100">Começar</a>
+                       <div className="btn btn-primary w-100">Começar</div>
                     </Link>
                 </div>
             </div>
