@@ -3,7 +3,19 @@ body {
     background: linear-gradient(180deg, #181819 67.71%, #331859 82.11%);
 }
 
+*{
+    list-style:none;
+}
 
+a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #C60DE2;
+    
+}
 
 
 .jumbotron-fluid {

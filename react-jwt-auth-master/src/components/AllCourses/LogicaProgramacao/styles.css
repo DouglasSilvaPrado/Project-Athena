@@ -1,0 +1,16 @@
+a,p,h2,h3{
+    color: #fff;
+}
+
+.logo-curso {
+    max-height: 400px;
+}
+
+.links {
+    color: #C60DE2 !important;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
