@@ -22,6 +22,7 @@ function CourseById({courseId}) {
         axios.get(`${BASE_URL}/courses/${courseId}`)
             .then((response) => {
                 setCourse(response.data);
+                console.log(response.data)
             })
     }, [courseId]);
 

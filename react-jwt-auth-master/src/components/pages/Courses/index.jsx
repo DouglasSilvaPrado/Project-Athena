@@ -7,6 +7,7 @@ function Courses() {
     return ( 
         <>
            <CourseById courseId={`${params.courseId}`} /> 
+           {console.log(params)}
         </>
      );
 }
