@@ -5,7 +5,7 @@ function LogicaProgramacao() {
   return (
     <>
       {/* oque e */}
-      <div className="container py-5">
+      <div className="container py-5 text-white">
         <h2 className="text-center py-3">Lógica de programação</h2>
         <p className="text-center">
           Lógica de programação é o modo como se escreve um programa de
@@ -16,7 +16,7 @@ function LogicaProgramacao() {
       </div>
 
       {/* Curso */}
-      <div className="container my-5 text-center">
+      <div className="container my-5 text-center text-white">
         <div className="container container-text">
           <div className="d-flex row row-cols-sm-1 row-cols-md-2 ">
             <iframe
@@ -65,7 +65,7 @@ function LogicaProgramacao() {
       </div>
 
       {/* fluxograma */}
-      <div className="container my-5 text-center" id="fluxograma">
+      <div className="container my-5 text-center text-white" id="fluxograma">
         <div className="row">
           <div className="col-sm-12 col-md-6 my-auto">
             <h3 className="secondary-color h1 mb-3">Fluxograma</h3>
@@ -85,7 +85,7 @@ function LogicaProgramacao() {
         </div>
       </div>
       {/*Scratch */}
-      <div className="container my-5 text-center" id="scratch">
+      <div className="container my-5 text-center text-white" id="scratch">
         <div className="row">
           <div className="col-sm-12 col-md-6 my-auto">
             <h3 className="secondary-color h1 mb-3">Scratch</h3>
@@ -107,7 +107,7 @@ function LogicaProgramacao() {
         </div>
       </div>
       {/* Portugol */}
-      <div className="container my-5 text-center" id="portugol">
+      <div className="container my-5 text-center text-white" id="portugol">
         <div className="row">
           <div className="col-sm-12 col-md-6 my-auto">
             <h3 className="secondary-color h1 mb-3">Portugol</h3>
