@@ -45,51 +45,29 @@ function LogicaProgramacao() {
         image="https://cdn-icons-png.flaticon.com/512/2145/2145546.png"
       />
 
-     
-
       {/*Scratch */}
-      <div className="container my-5 text-center text-white" id="scratch">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 my-auto">
-            <h3 className="secondary-color h1 mb-3">Scratch</h3>
-            <p>
-              O Scratch é um ambiente virtual desenvolvido pelo Instituto de
-              Tecnologia de Massachusetts (MIT) com o objetivo de ensinar
-              programação para crianças e adolescentes. Basicamente o usuário
-              precisa arrastar e juntar uma série de blocos, semelhante a um
-              quebra-cabeça, montando dessa forma seu programa.{" "}
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-6 my-auto">
-            <img
-              src="https://static-blog.render.com.br/wp-content/uploads/2015/08/Scratch.png"
-              className="img-fluid logo-curso my-3"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <CourseDescription
+        id={"scratch"}
+        title="Scratch"
+        description="O Scratch é um ambiente virtual desenvolvido pelo Instituto de
+        Tecnologia de Massachusetts (MIT) com o objetivo de ensinar
+        programação para crianças e adolescentes. Basicamente o usuário
+        precisa arrastar e juntar uma série de blocos, semelhante a um
+        quebra-cabeça, montando dessa forma seu programa.eensão dos problemas."
+        image="https://static-blog.render.com.br/wp-content/uploads/2015/08/Scratch.png"
+      />
+      
       {/* Portugol */}
-      <div className="container my-5 text-center text-white" id="portugol">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 my-auto">
-            <h3 className="secondary-color h1 mb-3">Portugol</h3>
-            <p>
-              Portugol é uma linguagem de programação educativa totalmente em
-              português, eliminando dessa forma a barreira que a sintaxe de uma
-              linguagem profissional, normalmente em inglês, pode impor aos
-              iniciantes.
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-6 my-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/28770607?v=4"
-              className="img-fluid logo-curso my-3"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <CourseDescription
+        id={"portugol"}
+        title="Portugol"
+        description="Portugol é uma linguagem de programação educativa totalmente em
+        português, eliminando dessa forma a barreira que a sintaxe de uma
+        linguagem profissional, normalmente em inglês, pode impor aos
+        iniciantes."
+        image="https://avatars.githubusercontent.com/u/28770607?v=4"
+      />
+      
     </>
   );
 }
