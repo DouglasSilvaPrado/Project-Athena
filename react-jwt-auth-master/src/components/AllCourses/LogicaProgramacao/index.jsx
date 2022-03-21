@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 
 import CourseVideo from "../../layout/CourseVideo";
+import CourseDescription from "../../layout/CourseDescription";
 
 function LogicaProgramacao() {
   return (
@@ -17,6 +18,7 @@ function LogicaProgramacao() {
         </p>
       </div>
 
+      {/* Curso */}
       <CourseVideo 
         video="https://www.youtube.com/embed/videoseries?list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
         reference="https://www.youtube.com/c/ProgrameseufuturoComWagnerGaspar"
@@ -32,28 +34,18 @@ function LogicaProgramacao() {
         listRef3="#portugol"
         listItem3="Portugol"
       />
+      
+      {/* fluxograma */}
+      <CourseDescription
+        id={"fluxograma"}
+        title="Fluxograma"
+        description="Um fluxograma nada mais é que uma forma visual de representar
+        passos ou etapas de um processo por meio de formas geométricas,
+        facilitando bastante a compreensão dos problemas."
+        image="https://cdn-icons-png.flaticon.com/512/2145/2145546.png"
+      />
 
      
-      {/* fluxograma */}
-      <div className="container my-5 text-center text-white" id="fluxograma">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 my-auto">
-            <h3 className="secondary-color h1 mb-3">Fluxograma</h3>
-            <p>
-              Um fluxograma nada mais é que uma forma visual de representar
-              passos ou etapas de um processo por meio de formas geométricas,
-              facilitando bastante a compreensão dos problemas.
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-6 my-auto">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2145/2145546.png"
-              className="img-fluid logo-curso my-3"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
 
       {/*Scratch */}
       <div className="container my-5 text-center text-white" id="scratch">

@@ -1,4 +1,5 @@
 import React from "react";
+import CourseVideo from "../../layout/CourseVideo";
 
 function GitGithub() {
   return (
@@ -27,50 +28,25 @@ function GitGithub() {
           </div>
         </div>
       </div>
+
       {/* Curso */}
-      <div className="container my-5 text-center text-white">
-        <div className="container container-text">
-          <div className="d-flex row row-cols-sm-1 row-cols-md-2 ">
-            <iframe
-              className="my-auto col-lg-8 col-md-8 col-sm-12"
-              height={400}
-              src="https://www.youtube.com/embed/videoseries?list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8"
-              title="YouTube video player"
-              frameBorder={0}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <div className="my-3 col-lg-4 col-md-4 col-sm-12">
-              <h3>
-                <a
-                  href="https://www.youtube.com/c/rafaellaballerini"
-                  target="_blank"
-                  className="links"
-                >
-                  Rafaella Ballerini
-                </a>
-              </h3>
-              <p>
-                Curso explicando a definição de Git e Github e os principais
-                conceitos utilizados na ferramenta! É algo muito necessário na
-                vida de um desenvolvedor ou desenvolvedora.
-              </p>
-              <ul>
-                <li>
-                  <a className="links" href="#git">
-                    GIT
-                  </a>
-                </li>
-                <li>
-                  <a className="links" href="#github">
-                    GITHUB
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CourseVideo 
+        video="https://www.youtube.com/embed/videoseries?list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8"
+        reference="https://www.youtube.com/c/rafaellaballerini"
+        channel="Rafaella Ballerini"
+        text="Curso explicando a definição de Git e Github e os principais
+        conceitos utilizados na ferramenta! É algo muito necessário na
+        vida de um desenvolvedor ou desenvolvedora."
+        
+        listRef1="#git"
+        listItem1="Git"
+
+        listRef2="#github"
+        listItem2="GITHUB"
+      />
+
+      
+      
       {/* git */}
       <div className="container my-5 text-center text-white" id="git">
         <div className="row">

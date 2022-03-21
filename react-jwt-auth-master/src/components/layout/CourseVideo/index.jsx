@@ -42,7 +42,7 @@ function CourseVideo(props) {
                 </li>
                 <li>
                   <a className="links" href={props.listRef3}>
-                  {props.listItem2}
+                  {props.listItem3}
                   </a>
                 </li>
               </ul>
