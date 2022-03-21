@@ -14,7 +14,7 @@ import PageHome from "./components/pages/Home/home";
 import PageCourses from "./components/pages/Course";
 import PageAbout from "./components/pages/About";
 import PageContact from "./components/pages/Contact";
-import Courses from "./components/pages/Courses";
+import Courses from "./components/layout/Courses";
 //layout
 import Navbar from "./components/layout/Navbar";
 

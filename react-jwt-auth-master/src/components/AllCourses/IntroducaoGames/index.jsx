@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function IntroducaoGames() {
-    return ( 
-        <>
-            <h1>IntroducaoGames</h1>
-        </>
-     );
+  return (
+    <>
+      
+    </>
+  );
 }
 
 export default IntroducaoGames;

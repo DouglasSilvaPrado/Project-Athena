@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
 
+import CourseVideo from "../../layout/CourseVideo";
+
 function LogicaProgramacao() {
   return (
     <>
@@ -15,55 +17,23 @@ function LogicaProgramacao() {
         </p>
       </div>
 
-      {/* Curso */}
-      <div className="container my-5 text-center text-white">
-        <div className="container container-text">
-          <div className="d-flex row row-cols-sm-1 row-cols-md-2 ">
-            <iframe
-              className="my-auto col-lg-8 col-md-8 col-sm-12"
-              height={400}
-              src="https://www.youtube.com/embed/videoseries?list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
-              title="YouTube video player"
-              frameBorder={0}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <div className="my-3 col-lg-4 col-md-4 col-sm-12">
-              <h3>
-                <a
-                  href="https://www.youtube.com/c/ProgrameseufuturoComWagnerGaspar"
-                  target="_blank"
-                  className="links"
-                >
-                  Programe seu futuro
-                </a>
-              </h3>
-              <p>
-                Curso introdutório de Algoritmos e Lógica de Programação
-                utilizando Fluxograma, Scratch e Portugol.
-              </p>
-              <ul>
-                <li>
-                  <a className="links" href="#fluxograma">
-                    Fluxograma
-                  </a>
-                </li>
-                <li>
-                  <a className="links" href="#scratch">
-                    Scratch
-                  </a>
-                </li>
-                <li>
-                  <a className="links" href="#portugol">
-                    Portugol
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CourseVideo 
+        video="https://www.youtube.com/embed/videoseries?list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
+        reference="https://www.youtube.com/c/ProgrameseufuturoComWagnerGaspar"
+        channel="Programe seu futuro"
+        text="Curso introdutório de Algoritmos e Lógica de Programação
+        utilizando Fluxograma, Scratch e Portugol."
+        listRef1="#fluxograma"
+        listItem1="Fluxograma"
 
+        listRef2="#scratch"
+        listItem2="Scratch"
+
+        listRef3="#portugol"
+        listItem3="Portugol"
+      />
+
+     
       {/* fluxograma */}
       <div className="container my-5 text-center text-white" id="fluxograma">
         <div className="row">
@@ -84,6 +54,7 @@ function LogicaProgramacao() {
           </div>
         </div>
       </div>
+
       {/*Scratch */}
       <div className="container my-5 text-center text-white" id="scratch">
         <div className="row">
