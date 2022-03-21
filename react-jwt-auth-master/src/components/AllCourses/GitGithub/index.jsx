@@ -1,4 +1,5 @@
 import React from "react";
+import CourseDescription from "../../layout/CourseDescription";
 import CourseVideo from "../../layout/CourseVideo";
 
 function GitGithub() {
@@ -44,51 +45,29 @@ function GitGithub() {
         listRef2="#github"
         listItem2="GITHUB"
       />
-
-      
       
       {/* git */}
-      <div className="container my-5 text-center text-white" id="git">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 my-auto">
-            <h3 className="secondary-color h1 mb-3">GIT</h3>
-            <p>
-              De longe, o sistema de controle de versão moderno mais usado no
-              mundo hoje é o Git. O Git é um projeto de código aberto maduro e
-              com manutenção ativa desenvolvido em 2005 por Linus Torvalds, o
-              famoso criador do kernel do sistema operacional Linux.
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-6 my-auto">
-            <img
-              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-              className="img-fluid logo-curso my-3"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <CourseDescription
+        id={"git"}
+        title="GIT"
+        description="De longe, o sistema de controle de versão moderno mais usado no
+        mundo hoje é o Git. O Git é um projeto de código aberto maduro e
+        com manutenção ativa desenvolvido em 2005 por Linus Torvalds, o
+        famoso criador do kernel do sistema operacional Linux."
+        image="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+      />
+      
       {/* GITHUB */}
-      <div className="container my-5 text-center text-white" id="github">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 my-auto">
-            <h3 className="secondary-color h1 mb-3">GITHUB</h3>
-            <p>
-              GitHub é amplamente utilizado por programadores para divulgação de
-              seus trabalhos ou para que outros programadores contribuam com o
-              projeto, além de promover fácil comunicação através de recursos
-              que relatam problemas ou mesclam repositórios remotos.
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-6 my-auto">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              className="img-fluid logo-curso my-3"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <CourseDescription
+        id={"github"}
+        title="GITHUB"
+        description="GitHub é amplamente utilizado por programadores para divulgação de
+        seus trabalhos ou para que outros programadores contribuam com o
+        projeto, além de promover fácil comunicação através de recursos
+        que relatam problemas ou mesclam repositórios remotos."
+        image="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+      />
+
     </>
   );
 }
