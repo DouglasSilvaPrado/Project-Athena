@@ -3,20 +3,20 @@ import "./styles.css";
 
 import CourseVideo from "../../layout/CourseVideo";
 import CourseDescription from "../../layout/CourseDescription";
+import CourseIntroduction from "../../layout/CourseIntroduction";
 
 function LogicaProgramacao() {
   return (
     <>
       {/* oque e */}
-      <div className="container py-5 text-white">
-        <h2 className="text-center py-3">Lógica de programação</h2>
-        <p className="text-center">
-          Lógica de programação é o modo como se escreve um programa de
-          computador, um algoritmo. Um algoritmo é uma sequência de passos para
-          se executar uma função. Um exemplo de algoritmo, fora da computação, é
-          uma receita de bolo.
-        </p>
-      </div>
+      <CourseIntroduction
+        title="Lógica de programação"
+        introduction="Lógica de programação é o modo como se escreve um programa de
+        computador, um algoritmo. Um algoritmo é uma sequência de passos para
+        se executar uma função. Um exemplo de algoritmo, fora da computação, é
+        uma receita de bolo."
+      />
+      
 
       {/* Curso */}
       <CourseVideo 
