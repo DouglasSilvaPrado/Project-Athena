@@ -69,7 +69,7 @@ class Navbar extends Component {
 
                   <>
                     <Link to={"/profile"} className="nav-link">{currentUser.username}</Link>
-                    <a href="/login" className="nav-link" onClick={this.logOut}>LogOut</a>
+                    <Link to={"/"} className="nav-link" onClick={this.logOut}>LogOut</Link>
                   </>
                 ) : (
                   <>

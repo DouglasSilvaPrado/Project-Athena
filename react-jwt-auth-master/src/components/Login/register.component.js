@@ -123,7 +123,7 @@ export default class Register extends Component {
   render() {
     return (
       <div>
-        <div className="container bg-contato my-5">
+        <div className="container w-50 bg-contato my-5">
           <h1 className="text-white display-6 text-center fw-bold my-5">
             Criar conta
           </h1>
@@ -134,7 +134,7 @@ export default class Register extends Component {
             }}
           >
             {!this.state.successful && (
-              <div>
+              <div className="w-75 mx-auto">
                 <div className="form-group">
                   <label htmlFor="username">Username</label>
                   <Input

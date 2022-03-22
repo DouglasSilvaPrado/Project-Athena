@@ -54,7 +54,7 @@ export default class Login extends Component {
     if (this.checkBtn.context._errors.length === 0) {
       AuthService.login(this.state.username, this.state.password).then(
         () => {
-          this.props.history.push('/profile')
+          this.props.history.push('/')
           window.location.reload()
         },
         error => {
@@ -81,7 +81,7 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <div className="container bg-contato my-5">
+        <div className="container w-50 bg-contato my-5">
           <h1 class="text-white display-6 text-center fw-bold my-5">Entrar</h1>
           <Form
             onSubmit={this.handleLogin}
@@ -89,42 +89,43 @@ export default class Login extends Component {
               this.form = c
             }}
           >
-            <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <Input
-                type="text"
-                className="form-control"
-                name="username"
-                value={this.state.username}
-                onChange={this.onChangeUsername}
-                validations={[required]}
-              />
-            </div>
+            <div className="w-75 mx-auto">
+              <div className="form-group">
+                <label htmlFor="username">Username</label>
+                <Input
+                  type="text"
+                  className="form-control"
+                  name="username"
+                  value={this.state.username}
+                  onChange={this.onChangeUsername}
+                  validations={[required]}
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <Input
-                type="password"
-                className="form-control"
-                name="password"
-                value={this.state.password}
-                onChange={this.onChangePassword}
-                validations={[required]}
-              />
-            </div>
+              <div className="form-group">
+                <label htmlFor="password">Password</label>
+                <Input
+                  type="password"
+                  className="form-control"
+                  name="password"
+                  value={this.state.password}
+                  onChange={this.onChangePassword}
+                  validations={[required]}
+                />
+              </div>
 
-            <div className="form-group d-flex justify-content-end py-5">
-              <button
-                className="btn btn-outline-success btn-block my-3"
-                disabled={this.state.loading}
-              >
-                {this.state.loading && (
-                  <span className="spinner-border spinner-border-sm"></span>
-                )}
-                <span>Login</span>
-              </button>
+              <div className="form-group d-flex justify-content-end py-5">
+                <button
+                  className="btn btn-outline-success btn-block my-3"
+                  disabled={this.state.loading}
+                >
+                  {this.state.loading && (
+                    <span className="spinner-border spinner-border-sm"></span>
+                  )}
+                  <span>Login</span>
+                </button>
+              </div>
             </div>
-
             {this.state.message && (
               <div className="form-group">
                 <div className="alert alert-danger" role="alert">

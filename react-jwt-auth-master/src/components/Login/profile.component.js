@@ -1,31 +1,31 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-import AuthService from "../../services/auth.service";
+import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
+import AuthService from '../../services/auth.service'
 
 export default class Profile extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       redirect: null,
       userReady: false,
-      currentUser: { username: "" },
-    };
+      currentUser: { username: '' }
+    }
   }
 
   componentDidMount() {
-    const currentUser = AuthService.getCurrentUser();
+    const currentUser = AuthService.getCurrentUser()
 
-    if (!currentUser) this.setState({ redirect: "/home" });
-    this.setState({ currentUser: currentUser, userReady: true });
+    if (!currentUser) this.setState({ redirect: '/' })
+    this.setState({ currentUser: currentUser, userReady: true })
   }
 
   render() {
     if (this.state.redirect) {
-      return <Redirect to={this.state.redirect} />;
+      return <Redirect to={this.state.redirect} />
     }
 
-    const { currentUser } = this.state;
+    const { currentUser } = this.state
 
     return (
       <div className="container text-white">
@@ -110,7 +110,6 @@ export default class Profile extends Component {
             {/* tablist */}
 
             <div className="tab-content" id="pills-tabContent">
-
               <div
                 className="tab-pane fade show active"
                 id="pills-panel"
@@ -118,10 +117,12 @@ export default class Profile extends Component {
                 aria-labelledby="pills-panel-tab"
               >
                 <div className="container my-5 text-center">
-                  <p>Olá, seja bem vindo a sua área do aluno(a)</p>   
-                  <p>Na sua área do aluno(a), você pode ver os seus certificados, os cursos em que você está matriculado e outros detalhes da sua conta</p>               
-                        
-                      
+                  <p>Olá, seja bem vindo a sua área do aluno(a)</p>
+                  <p>
+                    Na sua área do aluno(a), você pode ver os seus certificados,
+                    os cursos em que você está matriculado e outros detalhes da
+                    sua conta
+                  </p>
                 </div>
                 {/*Container Panel*/}
               </div>
@@ -163,17 +164,15 @@ export default class Profile extends Component {
               >
                 <div className="container my-5 text-center">
                   <h1>Contato</h1>
-                  
                 </div>
                 {/*container contact us*/}
               </div>
               {/* contact us*/}
-
             </div>
             {/* tabs-content */}
           </div>
         ) : null}
       </div>
-    );
+    )
   }
 }
