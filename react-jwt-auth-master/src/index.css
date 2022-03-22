@@ -1,7 +1,5 @@
 body {
   background: linear-gradient(180deg, #181819 67.71%, #331859 82.11%);
-  /* color: #fff; */
-  /* font-size: 1.5rem; */
 }
 
 * {
@@ -9,12 +7,12 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none !important;
 }
 
 a:hover {
-  color: #c60de2;
+  color: #c60de2 !important;
 }
 
 .jumbotron-fluid {
@@ -205,8 +203,4 @@ body {
 
 .logo-curso {
   max-height: 400px;
-}
-
-.links {
-  color: #c60de2 !important;
 }
