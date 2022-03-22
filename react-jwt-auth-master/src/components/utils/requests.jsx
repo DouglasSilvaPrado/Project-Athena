@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:8080/api/auth"
+export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? "https://project-athena-backend.herokuapp.com/api/auth"

@@ -36,21 +36,23 @@ function PageAbout() {
           Nós habilitamos nossas alunas a superarem os maiores desafios da era digital, através da tecnologia e da eficiência.
         </p>
       </div>
-      <BoxAbout
-        title="Missão"
-        mensage="Ajudar meninas de 11 a 17 anos de situações de vulnerabilidade apresentando a elas o mundo da tecnologia."
-        type="missao"
-      />
-      <BoxAboutR
-        title="Visão"
-        mensage=" Aumentar o número de mulheres na área da tecnologia."
-        type="visao"
-      />
-      <BoxAbout
-        title="Valores"
-        mensage="Igualdade de gênero, inclusão social, valorizar pessoas, produzir sorrisos, elevar a autoestima com responsabilidade e empreendedorismo responsável."
-        type="valor"
-      />
+      <div className='container w-75'>
+        <BoxAbout
+          title="Missão"
+          mensage="Ajudar meninas de 11 a 17 anos de situações de vulnerabilidade apresentando a elas o mundo da tecnologia."
+          type="missao"
+        />
+        <BoxAboutR
+          title="Visão"
+          mensage=" Aumentar o número de mulheres na área da tecnologia."
+          type="visao"
+        />
+        <BoxAbout
+          title="Valores"
+          mensage="Igualdade de gênero, inclusão social, valorizar pessoas, produzir sorrisos, elevar a autoestima com responsabilidade e empreendedorismo responsável."
+          type="valor"
+        />
+      </div>
       <Div
         title="Equipe" />
       <Equipe />

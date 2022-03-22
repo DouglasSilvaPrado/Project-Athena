@@ -27,7 +27,7 @@ function PageCourses() {
         image={'https://i.ibb.co/4JW5BVY/destaque-Cursos.gif'}
       />
 
-      <div className="container">
+      <div className="container w-75">
         <div className="row">
           {courses.map(course => (
             <div key={course.id} className="col-md-6 col-lg-4 mb-3">
