@@ -115,6 +115,7 @@ body {
 
 .card {
   border: 1px solid #c60de2;
+  background: none;
 }
 
 @media (max-width: 768px) {
@@ -182,20 +183,20 @@ body {
   height: 34.375rem;
 }
 
-/* .missao {
-  background: url('..//8.svg');
+.missao {
+  background: url('https://i.ibb.co/vwbbv3m/8.png');
   background-size: cover;
 }
 
 .visao {
-  background: url('..//9.svg');
+  background: url('https://i.ibb.co/vvg8vJK/9.png');
   background-size: cover;
 }
 
 .valor {
-  background: url('..//10.svg');
+  background: url('https://i.ibb.co/XVX6H9n/10.png');
   background-size: cover;
-} */
+}
 
 .dropdown-menu {
   min-width: 7rem;

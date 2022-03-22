@@ -13,12 +13,12 @@ export default function index() {
         </div>
         <div className="col">
           <MiniCardA image={'https://i.ibb.co/Df7RrmJ/Ellipse-1-1.png'} title={"SHELL"}
-            alt={'RECODE'}
+            alt={'SHELL'}
           />
         </div>
         <div className="col">
           <MiniCardA image={'https://i.ibb.co/CWSSBF9/Ellipse-1-2.png'} title={"ITAÚ"}
-            alt={'RECODE'}
+            alt={'ITAÚ'}
           />
         </div>
       </div>

@@ -122,8 +122,8 @@ export default class Register extends Component {
 
   render() {
     return (
-      <div className="col-md-12">
-        <div className="card card-container">
+      <div>
+        <div className="container bg-contato my-5">
           <Form
             onSubmit={this.handleRegister}
             ref={c => {
@@ -168,8 +168,10 @@ export default class Register extends Component {
                   />
                 </div>
 
-                <div className="form-group">
-                  <button className="btn btn-primary btn-block">Sign Up</button>
+                <div className="form-group d-flex justify-content-end py-5">
+                  <button className="btn btn-outline-success btn-block my-3">
+                    Sign Up
+                  </button>
                 </div>
               </div>
             )}

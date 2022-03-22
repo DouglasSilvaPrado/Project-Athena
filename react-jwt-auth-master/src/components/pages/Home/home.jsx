@@ -8,7 +8,7 @@ import { BASE_URL } from '../../utils/requests';
 
 import Jumbotron from '../../layout/Jumbotron';
 import Div from '../../layout/Div';
-import Apoie from '../../layout/Equipe';
+import Apoie from '../../layout/Apoie';
 
 
 function PageHome() {

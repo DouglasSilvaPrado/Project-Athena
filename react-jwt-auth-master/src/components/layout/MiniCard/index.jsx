@@ -11,12 +11,12 @@ function MiniCard(props) {
                 <ul className="d-flex d-inline justify-content-center mx-0 px-0 ">
                     <li className="p-2">
                         <a href={props.linkedin} target="_blank">
-                            <img src="~/linkedin.svg" alt="Linkedin" />
+                            <img src="https://i.ibb.co/YNfgsTS/linkedin.png" alt="Linkedin" />
                         </a>
                     </li>
                     <li className="p-2">
                         <a href={props.github} target="_blank">
-                            <img src="~/github.svg" alt="GitHub" />
+                            <img src="https://i.ibb.co/jRNGC0k/github.png" alt="GitHub" />
                         </a>
                     </li>
                 </ul>
