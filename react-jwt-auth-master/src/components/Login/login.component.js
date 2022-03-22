@@ -82,6 +82,7 @@ export default class Login extends Component {
     return (
       <div>
         <div className="container bg-contato my-5">
+          <h1 class="text-white display-6 text-center fw-bold my-5">Entrar</h1>
           <Form
             onSubmit={this.handleLogin}
             ref={c => {

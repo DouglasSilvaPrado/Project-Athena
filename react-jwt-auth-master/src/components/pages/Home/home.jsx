@@ -15,7 +15,7 @@ function PageHome() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/courses`)
+    axios.get(`${BASE_URL}/courses?size=3`)
       .then((response) => {
         setCourses(response.data.content);
       });
@@ -29,7 +29,7 @@ function PageHome() {
         image={'https://i.ibb.co/ZKkfssp/index-Athena.gif'}
       />
 
-      <div className="container">
+      <div className="container w-75">
         <div className="row">
           {courses.map(course => (
             <div key={course.id} className="col-md-6 col-lg-4 mb-3">

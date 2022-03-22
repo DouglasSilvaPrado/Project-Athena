@@ -124,6 +124,9 @@ export default class Register extends Component {
     return (
       <div>
         <div className="container bg-contato my-5">
+          <h1 className="text-white display-6 text-center fw-bold my-5">
+            Criar conta
+          </h1>
           <Form
             onSubmit={this.handleRegister}
             ref={c => {
