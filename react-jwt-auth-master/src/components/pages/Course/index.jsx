@@ -17,29 +17,29 @@ function PageCourses() {
         setCourses(response.data.content);
       });
   }, []);
-    
 
-    return ( 
-        <>
-          <Jumbotron
-           title={'ATHENA'}
-           description={`Faça seu caminho, conheça um novo mundo`}
-           image={'https://i.ibb.co/4JW5BVY/destaque-Cursos.gif'} 
-          />
 
-          <div className="container">
-            <div className="row">
-                {courses.map(course => (
-                    <div key={course.id} className="col-md-6 col-lg-4 mb-3">
-                        <CourseCard course={course} />
-                    </div>
-                )
-                )}   
+  return (
+    <>
+      <Jumbotron
+        title={'ATHENA'}
+        description={`Faça seu caminho, conheça um novo mundo`}
+        image={'https://i.ibb.co/4JW5BVY/destaque-Cursos.gif'}
+      />
+
+      <div className="container">
+        <div className="row">
+          {courses.map(course => (
+            <div key={course.id} className="col-md-6 col-lg-4 mb-3">
+              <CourseCard course={course} />
             </div>
-        </div>        
-            
-        </>
-     );
+          )
+          )}
+        </div>
+      </div>
+
+    </>
+  );
 }
 
 export default PageCourses;
