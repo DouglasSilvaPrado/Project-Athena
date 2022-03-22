@@ -7,19 +7,19 @@ export default function index() {
       <ul className="mx-0 px-0 ">
         <li className="py-2">
           <a href="#">
-            <i className="bi bi-facebook pr-2" />
+            <i className="bi bi-facebook pe-2" />
             FaceBook
           </a>
         </li>
         <li className="py-2">
           <a href="#">
-            <i className="bi bi-instagram pr-2" />
+            <i className="bi bi-instagram pe-2" />
             Instagram
           </a>
         </li>
         <li className="py-2">
           <a href="#">
-            <i className="bi bi-twitter pr-2" />
+            <i className="bi bi-twitter pe-2" />
             Twitter
           </a>
         </li>
