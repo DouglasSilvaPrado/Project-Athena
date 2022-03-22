@@ -33,6 +33,7 @@ function App() {
 
         <Route path="/course/:courseId" component={Courses} />
       </Switch>
+
       <Footer />
     </>
   )
